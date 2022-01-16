@@ -70,7 +70,6 @@ body{
 .card .button{
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    color: var(--Bright-orange);
     background-color: white;
     display: flex;
     justify-content: center;
@@ -82,4 +81,26 @@ body{
 .first-card{
     background-color: var(--Bright-orange);
     border-radius: 7px 7px 0px 0px ;
+}
+
+.first-card .button{
+    color: var(--Bright-orange);
+}
+
+.second-card{
+    background-color: var(--Dark-cyan);
+}
+
+.second-card .button{
+    color: var(--Dark-cyan);
+}
+
+.third-card{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0px 0px 7px 7px  ;
+}
+
+.third-card .button{
+    color: var(--Very-dark-cyan);
+
 }

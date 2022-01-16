@@ -32,7 +32,8 @@ body {
 
 .card {
   height: 27.75em;
-  width: 20.375em;
+  min-width: 20.375em;
+  width: 80%;
   background-color: red;
   padding: 3em 3em;
   box-sizing: border-box;

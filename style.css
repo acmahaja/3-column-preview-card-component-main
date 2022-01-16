@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 /* font-family: 'Big Shoulders Display', cursive;
 font-family: 'Lexend Deca', sans-serif; */
@@ -8,99 +8,148 @@ font-family: 'Lexend Deca', sans-serif; */
   --Dark-cyan: hsl(184, 100%, 22%);
   --Very-dark-cyan: hsl(179, 100%, 13%);
   --Traparent-White: hsla(0, 0%, 100%, 0.75);
-  --Very-Light-Gray: hsl(0, 0%, 95%)
+  --Very-Light-Gray: hsl(0, 0%, 95%);
 }
 
-html{
-    width: 100vw;
-    height: 100vh;
-    padding: 0em;
-    margin: 0em;
+html {
+  width: 100vw;
+  height: 100vh;
+  padding: 0em;
+  margin: 0em;
 }
-body{
-    width: 100%;
-    min-height: 100%;
+body {
+  width: 100%;
+  min-height: 100%;
+  padding: 0em;
+  margin: 0em;
+  min-height: 100%;
+  background-color: var(--Very-Light-Gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5.5em 0em;
+}
+
+.card {
+  height: 27.75em;
+  width: 20.375em;
+  background-color: red;
+  padding: 3em 3em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.card .icon,
+text,
+button {
+  width: 100%;
+}
+
+.card .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card .text .title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5em;
+  line-height: 2.75em;
+  color: var(--Very-Light-Gray);
+}
+
+.card .text .desctiption {
+  color: var(--Traparent-White);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.925em;
+  line-height: 1.65em;
+  word-spacing: 1px;
+}
+
+.card .button {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.85em 1.5em;
+  border-radius: 2em;
+  text-align: center;
+}
+
+.first-card {
+  background-color: var(--Bright-orange);
+  border-radius: 7px 7px 0px 0px;
+}
+
+.first-card .button {
+  color: var(--Bright-orange);
+}
+
+.second-card {
+  background-color: var(--Dark-cyan);
+}
+
+.second-card .button {
+  color: var(--Dark-cyan);
+}
+
+.third-card {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0px 0px 7px 7px;
+}
+
+.third-card .button {
+  color: var(--Very-dark-cyan);
+}
+
+.card .button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+@media (min-width: 1400px) {
+  body {
+    flex-direction: row;
     padding: 0em;
     margin: 0em;
-    min-height: 100%;
-    background-color: var(--Very-Light-Gray);
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 5.5em 0em;
-}
-
-.card{
-    height: 27.75em;
-    width: 20.375em;
-    background-color: red;
-    padding: 3em 3em;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    text-align: left;
-}
-
-.card .icon,text,button{
-    width: 100%;
-}
-
-.card .text{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.card .text .title{
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 2.5em;
-    line-height: 2.75em;
-    color: var(--Very-Light-Gray);
-}
-
-.card .text .desctiption{
-    color: var(--Traparent-White);
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: .965em;
-    line-height: 1.75em;
-}
-
-.card .button{
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
-    background-color: white;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    padding: .85em 1.75em;
-    border-radius: 2em;
-}
+  }
 
-.first-card{
+  .card {
+    height: 31em;
+    width: 19em;
+  }
+
+  .first-card {
     background-color: var(--Bright-orange);
-    border-radius: 7px 7px 0px 0px ;
-}
+    border-radius: 7px 0px 0px 7px;
+  }
 
-.first-card .button{
+  .first-card .button {
     color: var(--Bright-orange);
-}
+  }
 
-.second-card{
+  .second-card {
     background-color: var(--Dark-cyan);
-}
+  }
 
-.second-card .button{
+  .second-card .button {
     color: var(--Dark-cyan);
-}
+  }
 
-.third-card{
+  .third-card {
     background-color: var(--Very-dark-cyan);
-    border-radius: 0px 0px 7px 7px  ;
-}
+    border-radius: 0px 7px 7px 0px;
+  }
 
-.third-card .button{
+  .third-card .button {
     color: var(--Very-dark-cyan);
-
+  }
 }

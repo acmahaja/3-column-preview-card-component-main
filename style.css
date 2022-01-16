@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Traparent-White: hsla(0, 0%, 100%, 0.75);
+  --Very-Light-Gray: hsl(0, 0%, 95%)
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    padding: 0em;
+    margin: 0em;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+    padding: 0em;
+    margin: 0em;
+    min-height: 100%;
+    background-color: var(--Very-Light-Gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.5em 0em;
+}
+
+.card{
+    height: 27.75em;
+    width: 20.375em;
+    background-color: red;
+    padding: 3em 3em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.card .icon,text,button{
+    width: 100%;
+}
+
+.card .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card .text .title{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5em;
+    line-height: 2.75em;
+    color: var(--Very-Light-Gray);
+}
+
+.card .text .desctiption{
+    color: var(--Traparent-White);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .965em;
+    line-height: 1.75em;
+}
+
+.card .button{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: var(--Bright-orange);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .85em 1.75em;
+    border-radius: 2em;
+}
+
+.first-card{
+    background-color: var(--Bright-orange);
+    border-radius: 7px 7px 0px 0px ;
+}
